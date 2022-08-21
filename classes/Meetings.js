@@ -82,16 +82,7 @@ class Meeting {
 
 class Rating {
     constructor(ratingData) {
-        this.id = ratingData.id;
-        this.name = ratingData.name;
-        this.rating = ratingData.rating;
-        this.room = ratingData.room;
-        this.purpose = ratingData.purpose;
-        this.secondaryPurpose = ratingData.secondaryPurpose;
-        this.paid = ratingData.paid;
-        this.denomiation = ratingData.denomiation;
-        this.date = ratingData.denomiation;
-        this.duration = ratingData.duration;
+        Object.assign(this, ratingData);
     }
 }
 

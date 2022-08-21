@@ -37,6 +37,8 @@ app.post('/submit-rating', (req, res) => {
   const rating = new Rating(req.body);
   //add rating to appropriate meeting
 
+  console.log(rating);
+
   res.send('{"bruh": "1"}');
 
 })

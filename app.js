@@ -61,8 +61,11 @@ app.post('/open-meeting', (req, res) => {
 
 app.post('/close-meeting', (req, res) => {
   
-  const meetingId = req.body.id;
+  const data = req.body;
+  const meetingId = data.id;
 
+  
+  console.log(data);
   console.log(meetingId);
 
   meetings.removeMeeting(meetingId);

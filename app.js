@@ -32,6 +32,8 @@ app.post('/', (req, res) => {
 
 app.post('/submit-rating', (req, res) => {
 
+  console.log(req.body);
+
   const rating = new Rating(req.body);
   //add rating to appropriate meeting
 
@@ -46,7 +48,9 @@ app.post('/open-meeting', (req, res) => {
   //instantiate a new Meeting in Meetings.
 
   const meetingId = req.body.id;
-  
+
+  console.log(meetingId);
+
   meetings.addMeeting(meetingId);
 
 })

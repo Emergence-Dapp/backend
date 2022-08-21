@@ -1,6 +1,6 @@
 const express = require('express');
 const { ethers } = require('ethers');
-
+const cors = require('cors');
 
 
 
@@ -12,7 +12,7 @@ app.use(cors({
     origin: "https://emergence-gamma.vercel.app/"
 }))
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 
 
 
